@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fredoka: ["var(--fredoka)"],
+        inter: ["var(--inter)"],
+        interTight: ["var(--interTight)"],
+        spaceGrotesk: ["var(--spaceGrotesk)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
