@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: var(--inter), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fredoka), sans-serif;
+}
+
+a {
+  font-family: var(--spaceGrotesk);
+}

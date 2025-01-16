@@ -9,15 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-tailwindcss": "^3.17.5",
+    "framer-motion": "^11.18.0",
+    "gsap": "^3.12.7",
     "next": "15.1.4",
     "prettier": "^3.4.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-element-to-jsx-string": "^15.0.0",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/gsap": "^3.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
