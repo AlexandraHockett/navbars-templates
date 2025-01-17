@@ -1,8 +1,16 @@
-import React from "react";
+interface VideoBackgroundProps {
+  src: string;
+  className?: string; // This line is already included
+}
 
-const VideoBackground = ({ src }: { src: string }) => {
+const VideoBackground: React.FC<VideoBackgroundProps> = ({
+  src,
+  className,
+}) => {
   return (
-    <div className="fixed top-0 left-0 h-screen w-full overflow-hidden -z-10">
+    <div
+      className={`fixed top-0 left-0 h-screen w-full overflow-hidden -z-10 ${className || ""}`}
+    >
       <video
         className="absolute top-0 left-0 h-full w-full object-cover"
         src={src}

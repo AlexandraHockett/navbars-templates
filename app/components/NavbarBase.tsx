@@ -3,8 +3,13 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { a } from "framer-motion/client";
 
-const NavbarBase = () => {
+interface NavbarBaseProps {
+  className?: string; // Add this line to accept className as a prop
+}
+
+const NavbarBase: React.FC<NavbarBaseProps> = ({ className }) => {
   const logoRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +34,9 @@ const NavbarBase = () => {
   }, []);
 
   return (
-    <nav className="bg-transparent fixed top-0 left-0 w-full z-20 shadow-lg">
+    <nav
+      className={`bg-transparent fixed top-0 left-0 w-full z-20 shadow-lg ${className || ""}`}
+    >
       <div className="mx-auto px-2 sm:px-12 py-2 flex justify-between items-center">
         <div ref={logoRef}>
           <Image
